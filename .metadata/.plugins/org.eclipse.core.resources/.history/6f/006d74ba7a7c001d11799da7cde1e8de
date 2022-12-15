@@ -1,0 +1,9 @@
+package main.modelos.daos;
+
+//Interfaz que define los metodos a implementar para la clase EvaTchEvaluacion
+
+public interface EvaTchNotasEvaluacionService {
+	
+	public void insertarRegistro(EvaTchNotasEvaluacion dao);
+
+}

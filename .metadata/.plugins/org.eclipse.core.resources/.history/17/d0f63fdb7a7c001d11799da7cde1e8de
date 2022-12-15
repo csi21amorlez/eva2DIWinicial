@@ -1,0 +1,14 @@
+package main.modelos.daos;
+
+import java.util.ArrayList;
+
+//Interfaz que define los metodos a implementar para la clase EvaTchEvaluacion, su implementacion estara en EvaTchNotasEvaluacionImpl
+
+public interface EvaTchNotasEvaluacionService {
+	
+	//Insertara un registro en la base de datos
+	public void insertarRegistro(EvaTchNotasEvaluacion dao);
+	
+	public ArrayList<EvaTchNotasEvaluacion> buscarTodos();
+
+}

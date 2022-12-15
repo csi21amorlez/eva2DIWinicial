@@ -1,0 +1,18 @@
+package Implementacion;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import main.modelos.daos.EvaTchNotasEvaluacionImpl;
+import modelos.convertidor.Convertidor;
+import modelos.convertidor.ConvertidorImpl;
+@Component
+public class Consultas {
+	
+	@Autowired
+	private EvaTchNotasEvaluacionImpl evp;
+	
+	@Autowired 
+	ConvertidorImpl cimpl;
+
+}

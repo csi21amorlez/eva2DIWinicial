@@ -1,0 +1,7 @@
+package main.modelos.daos;
+
+public interface EvaCatEvaluacionService {
+	
+	public void insertarRegistro(EvaCatEvaluacion dao);
+
+}

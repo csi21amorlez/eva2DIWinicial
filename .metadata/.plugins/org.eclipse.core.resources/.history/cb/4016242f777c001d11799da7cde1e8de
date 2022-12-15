@@ -1,0 +1,34 @@
+package main.modelos.daos;
+
+public class EvaCatEvaluacion {
+	
+	private String cod_evaluacion;
+	private String des_evaluacion;
+	
+//	Constructor vacio
+	public EvaCatEvaluacion() {
+		super();
+	}
+//	Constructor de testing con campos
+	public EvaCatEvaluacion(String cod_evaluacion, String des_evaluacion) {
+		super();
+		this.cod_evaluacion = cod_evaluacion;
+		this.des_evaluacion = des_evaluacion;
+	}
+//	Getters y setters
+	public String getCod_evaluacion() {
+		return cod_evaluacion;
+	}
+	public void setCod_evaluacion(String cod_evaluacion) {
+		this.cod_evaluacion = cod_evaluacion;
+	}
+	public String getDes_evaluacion() {
+		return des_evaluacion;
+	}
+	public void setDes_evaluacion(String des_evaluacion) {
+		this.des_evaluacion = des_evaluacion;
+	}
+	
+	
+
+}

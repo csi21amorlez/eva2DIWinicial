@@ -1,0 +1,11 @@
+package main.modelos.daos;
+
+import java.util.ArrayList;
+
+public interface EvaCatEvaluacionService {
+	
+	public void insertarRegistro(EvaCatEvaluacion dao);
+	
+	public ArrayList<EvaCatEvaluacion>buscarTodos();
+
+}

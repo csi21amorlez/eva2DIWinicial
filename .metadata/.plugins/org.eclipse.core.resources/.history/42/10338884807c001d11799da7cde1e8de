@@ -1,0 +1,29 @@
+package main.controlers;
+
+import java.util.ArrayList;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.stereotype.Controller;
+
+import Implementacion.Consultas;
+import main.modelos.dtos.RegistroDTO;
+
+@Controller
+public class Program {
+
+	public static void main(String[] args) {
+		
+		ArrayList<RegistroDTO> dtoList = new ArrayList();
+		
+		ApplicationContext ac = new ClassPathXmlApplicationContext("context.xml");
+		Consultas c = (Consultas) ac.getBean(Consultas.class);
+
+		c.insertar(new RegistroDTO("Test", "Primera Evaluacion", 10));
+		
+		c.buscarTodos();
+		
+
+	}
+
+}

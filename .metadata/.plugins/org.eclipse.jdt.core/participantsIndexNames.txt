@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+C:\Users\CSI21-Amorlez\Documents\examenJava2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3970408343.index
+\eva2DIWinicial\src\main\resources
+C:\Users\CSI21-Amorlez\Documents\examenJava2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2238321460.index
+\eva2DIWinicial\src\main\resources

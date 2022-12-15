@@ -1,0 +1,10 @@
+package main.modelos.dtos;
+
+//RegistroDTO --> DTO con el que trabajaremos los datos obtenidos a traves de los daos
+
+public class RegistroDTO {
+	
+	
+	
+
+}

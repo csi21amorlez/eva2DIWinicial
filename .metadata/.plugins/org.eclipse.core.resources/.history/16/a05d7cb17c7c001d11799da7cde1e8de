@@ -1,0 +1,30 @@
+package modelos.convertidor;
+
+import java.util.ArrayList;
+
+import main.modelos.daos.EvaTchNotasEvaluacion;
+import main.modelos.dtos.RegistroDTO;
+
+public class ConvertidorImpl implements Convertidor{
+
+	@Override
+	public EvaTchNotasEvaluacion DTOtoDAO(RegistroDTO dto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public RegistroDTO DAOtoDTO(EvaTchNotasEvaluacion dao) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ArrayList<RegistroDTO> DAOtoDTOList(ArrayList<EvaTchNotasEvaluacion> listDao) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+
+}

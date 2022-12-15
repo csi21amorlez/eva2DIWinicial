@@ -1,0 +1,46 @@
+package modelos.convertidor;
+
+import java.util.ArrayList;
+
+import main.modelos.daos.EvaTchNotasEvaluacion;
+import main.modelos.dtos.RegistroDTO;
+
+public class ConvertidorImpl implements Convertidor {
+
+	public EvaTchNotasEvaluacion DTOtoDAO(RegistroDTO dto) {
+		System.out.println("[INFO] -- Entrando en modelos.convertidor.ConvertidorImpl.DTOtoDao");
+
+		System.out.println("[INFO] -- Entrando en modelos.convertidor.ConvertidorImpl.DTOtoDao");
+		return null;
+	}
+
+	public RegistroDTO DAOtoDTO(EvaTchNotasEvaluacion dao) {
+		System.out.println("[INFO] -- Entrando en modelos.convertidor.ConvertidorImpl.DTOtoDao");
+		
+		RegistroDTO dto = new ReRegistroDTO();
+		
+		String evaluacion = "";
+		
+		if (dao.getCodEvaluacion() == "PR")
+            dto.set() = "Primera Evaluacion";
+        if (dao.getCodEvaluacion() == "SG")
+            dto.DescEvaluacion = "Segunda Evaluacion";
+        if (dao.CodEvaluacion == "TC")
+            dto.DescEvaluacion = "Tercera Evaluacion";
+        dto.NotaEvaluacion = dao.NotaEvaluacion;
+		
+		
+
+		System.out.println("[INFO] -- Entrando en modelos.convertidor.ConvertidorImpl.DTOtoDao");
+		return null;
+	}
+
+	public ArrayList<RegistroDTO> DAOtoDTOList(ArrayList<EvaTchNotasEvaluacion> listDao) {
+
+		System.out.println("[INFO] -- Entrando en modelos.convertidor.ConvertidorImpl.DTOtoDao");
+
+		System.out.println("[INFO] -- Entrando en modelos.convertidor.ConvertidorImpl.DTOtoDao");
+		return null;
+	}
+
+}

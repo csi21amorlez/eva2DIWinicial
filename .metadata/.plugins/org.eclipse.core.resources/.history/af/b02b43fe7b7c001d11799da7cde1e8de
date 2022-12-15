@@ -1,0 +1,17 @@
+package modelos.convertidor;
+import java.util.ArrayList;
+
+import main.modelos.daos.EvaTchNotasEvaluacion;
+import main.modelos.dtos.RegistroDTO;
+
+//Converter--> Interfaz que, tras implementar, gestionara la conversion de DTO a DAO y viceversa
+
+public interface Convertidor {
+	
+	 public EvaTchNotasEvaluacion DTOtoDAO(RegistroDTO dto) {
+		 
+	 }
+	
+	
+
+}

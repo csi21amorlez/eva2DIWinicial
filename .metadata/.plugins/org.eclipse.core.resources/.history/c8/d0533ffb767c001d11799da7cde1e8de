@@ -1,0 +1,21 @@
+;
+
+public class EvaCatEvaluacion {
+	
+	private String cod_evaluacion;
+	private String dec_evaluacion;
+	
+	public String getCod_evaluacion() {
+		return cod_evaluacion;
+	}
+	public void setCod_evaluacion(String cod_evaluacion) {
+		this.cod_evaluacion = cod_evaluacion;
+	}
+	public String getDec_evaluacion() {
+		return dec_evaluacion;
+	}
+	public void setDec_evaluacion(String dec_evaluacion) {
+		this.dec_evaluacion = dec_evaluacion;
+	}
+
+}

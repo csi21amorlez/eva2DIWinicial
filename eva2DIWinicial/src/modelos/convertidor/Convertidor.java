@@ -1,0 +1,23 @@
+package modelos.convertidor;
+
+import java.util.ArrayList;
+
+import org.springframework.stereotype.Component;
+
+import main.modelos.daos.EvaTchNotasEvaluacion;
+import main.modelos.dtos.RegistroDTO;
+
+//Converter--> Interfaz que, tras implementar, gestionara la conversion de DTO a DAO y viceversa
+@Component
+public interface Convertidor {
+
+//	Convertira en dto un dao recibido como parametro
+	public EvaTchNotasEvaluacion DTOtoDAO(RegistroDTO dto);
+
+//	 Convertira un dto recibido como parametro en un dao 
+	public RegistroDTO DAOtoDTO(EvaTchNotasEvaluacion dao);
+
+// 	Convertira una lista de daos recibida como parametro en una lista de dtos
+	public ArrayList<RegistroDTO> DAOtoDTOList(ArrayList<EvaTchNotasEvaluacion> listDao);
+
+}

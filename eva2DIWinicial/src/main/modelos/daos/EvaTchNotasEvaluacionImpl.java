@@ -1,0 +1,25 @@
+package main.modelos.daos;
+
+import java.util.ArrayList;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import org.springframework.stereotype.Component;
+@Component
+public class EvaTchNotasEvaluacionImpl implements EvaTchNotasEvaluacionService {
+
+	@PersistenceContext
+	EntityManager entMan;
+
+	public void insertarRegistro(EvaTchNotasEvaluacion dao) {
+		entMan.persist(dao);
+
+	}
+
+	public ArrayList<EvaTchNotasEvaluacion> buscarTodos() {
+		return (ArrayList<EvaTchNotasEvaluacion>) entMan.createNativeQuery("Select * from EvaTchNotasEvaluacion")
+				.getResultList();
+	}
+
+}

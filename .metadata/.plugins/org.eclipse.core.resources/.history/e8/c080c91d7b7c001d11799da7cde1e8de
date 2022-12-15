@@ -1,0 +1,24 @@
+package main.modelos.daos;
+
+import java.util.ArrayList;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+public class EvaTchNotasEvaluacionImpl implements EvaTchNotasEvaluacionService{
+
+	@PersistenceContext
+	EntityManager entMan;
+
+	public void insertarRegistro(EvaTchNotasEvaluacion dao) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	public ArrayList<EvaTchNotasEvaluacion> buscarTodos() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

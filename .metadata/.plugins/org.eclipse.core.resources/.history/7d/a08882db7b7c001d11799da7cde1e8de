@@ -1,0 +1,12 @@
+package modelos.convertidor;
+import java.util.ArrayList;
+
+//Converter--> Interfaz que, tras implementar, gestionara la conversion de DTO a DAO y viceversa
+
+public interface Convertidor {
+	
+	public 
+	
+	
+
+}

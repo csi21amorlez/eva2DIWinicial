@@ -1,0 +1,10 @@
+package modelos.convertidor;
+import java.util.ArrayList;
+
+public interface Convertidor {
+	
+	private 
+	
+	
+
+}

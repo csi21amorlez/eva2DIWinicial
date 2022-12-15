@@ -1,0 +1,31 @@
+package main.modelos.dtos;
+
+//RegistroDTO --> DTO con el que trabajaremos los datos obtenidos a traves de los daos
+
+public class RegistroDTO {
+	
+	private String codElumno;
+	private String codEvaluacion;
+	private int notaEvaluacion;
+	
+	public RegistroDTO(String codElumno, String codEvaluacion, int notaEvaluacion) {
+		super();
+		this.codElumno = codElumno;
+		this.codEvaluacion = codEvaluacion;
+		this.notaEvaluacion = notaEvaluacion;
+	}
+
+	@Override
+	public String toString() {
+		return "RegistroDTO [codElumno=" + codElumno + ", codEvaluacion=" + codEvaluacion + ", notaEvaluacion="
+				+ notaEvaluacion + "]";
+	}
+	
+	
+	
+	
+	
+	
+	
+
+}

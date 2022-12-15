@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\Users\CSI21-Amorlez\Documents\examenJava2\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2245151240.index
+4031619024.index
+2462856569.index
+3356043644.index
+2569509688.index
+1983209982.index

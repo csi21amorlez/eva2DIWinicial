@@ -1,0 +1,8 @@
+package main.modelos.daos;
+
+public class EvaCatEvaluacion {
+	
+	private String cod_evaluacion;
+	private String des_evaluacion;
+
+}

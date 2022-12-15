@@ -1,0 +1,62 @@
+package modelos.convertidor;
+
+import java.util.ArrayList;
+
+import main.modelos.daos.EvaTchNotasEvaluacion;
+import main.modelos.dtos.RegistroDTO;
+
+public class ConvertidorImpl implements Convertidor {
+
+	public EvaTchNotasEvaluacion DTOtoDAO(RegistroDTO dto) {
+		System.out.println("[INFO] -- Entrando en modelos.convertidor.ConvertidorImpl.DTOtoDao");
+
+		EvaTchNotasEvaluacion dao = new EvaTchNotasEvaluacion();
+
+		dao.setMdUuid("Test");
+		dao.setMdFch(null);
+
+		if (dao.getCodEvaluacion() == "Primera Evaluacion")
+			dao.setCodEvaluacion("PR");
+
+		if (dao.getCodEvaluacion() == "Segunda Evaluacion")
+			dao.setCodEvaluacion("SG");
+
+		if (dao.getCodEvaluacion() == "Tercera Evaluacion")
+			dao.setCodEvaluacion("TC");
+		
+		dao.setCodAlumno(dto.getCodAlumno());
+		dao.setNotaEvaluacion(dto.getNotaEvaluacion());
+
+		System.out.println("[INFO] -- Entrando en modelos.convertidor.ConvertidorImpl.DTOtoDao");
+		return null;
+	}
+
+	public RegistroDTO DAOtoDTO(EvaTchNotasEvaluacion dao) {
+		System.out.println("[INFO] -- Entrando en modelos.convertidor.ConvertidorImpl.DTOtoDao");
+
+		String eva = "";
+
+		if (dao.getCodEvaluacion() == "PR")
+			eva = "Primera Evaluacion";
+
+		if (dao.getCodEvaluacion() == "SG")
+			eva = "Segunda Evaluacion";
+
+		if (dao.getCodEvaluacion() == "TC")
+			eva = "Tercera Evaluacion";
+
+		RegistroDTO dto = new RegistroDTO(dao.getCodAlumno(), eva, dao.getNotaEvaluacion());
+
+		System.out.println("[INFO] -- Entrando en modelos.convertidor.ConvertidorImpl.DTOtoDao");
+		return dto;
+	}
+
+	public ArrayList<RegistroDTO> DAOtoDTOList(ArrayList<EvaTchNotasEvaluacion> listDao) {
+
+		System.out.println("[INFO] -- Entrando en modelos.convertidor.ConvertidorImpl.DTOtoDao");
+
+		System.out.println("[INFO] -- Entrando en modelos.convertidor.ConvertidorImpl.DTOtoDao");
+		return null;
+	}
+
+}

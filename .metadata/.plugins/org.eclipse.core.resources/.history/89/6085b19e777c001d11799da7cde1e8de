@@ -1,0 +1,17 @@
+package main.modelos.daos;
+
+import java.security.Timestamp;
+
+;
+
+public class EvaTchNotasEvaluacion {
+	
+	private String mdUuid;
+	private Timestamp mdFch;
+	private int idNotaEvaluacion;
+	private String codAlumno;
+	private int notaEvaluacion;
+	private String codEvaluacion;
+	
+
+}

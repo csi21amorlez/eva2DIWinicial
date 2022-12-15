@@ -1,0 +1,5 @@
+package main.modelos.dtos;
+
+public class RegistroDTO {
+
+}
